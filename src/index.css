@@ -76,3 +76,16 @@ swiper {
   border-style: solid;
   border-color: transparent transparent #e63f38 transparent;
 }
+
+.icon {
+  color: #676767;
+  transition: 0.2s ease-in-out;
+}
+
+.icon:hover {
+  color: #e63f38;
+}
+
+.signup .signup-icon{
+  color: #1966a2;
+}
