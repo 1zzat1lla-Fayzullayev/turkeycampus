@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import Hamburger from "../../ui/navbar/hamburger";
 import MobileApplyBtn from "../../ui/navbar/mobileApplyBtn";
 
-function NavbarBottom() {
+function NavbarBottom({ handleOpenNavbar }) {
   const [activeIndex, setActiveIndex] = useState(
     () => JSON.parse(localStorage.getItem("activeIndex")) || 0
   );
@@ -55,7 +56,7 @@ function NavbarBottom() {
       </div>
       <div className="flex items-center gap-[8px]">
         <MobileApplyBtn />
-        <Hamburger />
+        <Hamburger handleOpenNavbar={handleOpenNavbar}/>
       </div>
     </div>
   );
