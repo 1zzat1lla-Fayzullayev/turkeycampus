@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.line-effict, .line-effict-2 {
+  position: absolute;
+  overflow-x: hidden;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 850px;
+  height: 850px;
+  border-radius: 50%;
+  border: 1px solid #e63f38;
+  opacity: 0.2;
+  background: transparent;
+  /* z-index: -1; */
+}
+
+.line-effict .other-line {
+  width: 800px;
+  overflow-x: hidden;
+  height: 800px;
+  border-radius: 50%;
+  border: 1px solid #1966a2;
+  opacity: 0.6;
+  margin: auto;
+}
+
+.main-gradient{
+  height: 100vh;
+  background: transparent linear-gradient(180deg, #d5f0f7 0%, #ffffff 100%) 0% 0% no-repeat padding-box;
+  /* z-index: -2; */
+  position: relative;
+}
+
+swiper {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav ul li a {
+  position: relative; 
+  color: #707070;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.nav ul li a.active,
+.nav ul li a:hover {
+  color: #e63f38;
+}
+
+.nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: transparent transparent #e63f38 transparent;
+}
