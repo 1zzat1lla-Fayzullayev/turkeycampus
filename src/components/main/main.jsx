@@ -12,7 +12,7 @@ import Wrapper from "../../layout/wrapper";
 function Main() {
   return (
     <>
-      <div className="main-gradient">
+      <div className="main-gradient overflow-x-hidden">
         <Wrapper>
           <Swiper
             spaceBetween={30}
