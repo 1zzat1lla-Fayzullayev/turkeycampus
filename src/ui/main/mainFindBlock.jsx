@@ -38,7 +38,7 @@ function MainFindBlock() {
   return (
     <div className="bg-white main-find-block z-[10] relative flex flex-col md:flex-row md:items-center justify-between border border-[#e9e9e9] rounded-[40px] px-[18px] py-[29px]" ref={menuRef}>
       <div>
-        <h2 className="text-[32px] font-[700] text-[black] leading-[35px]">
+        <h2 className="text-[32px] font-[700] text-center md:text-start text-[black] leading-[35px]">
           Find <br className="hidden md:block" /> Your{" "}
           <span className="text-[#e63f38]">Best Choice</span>
         </h2>

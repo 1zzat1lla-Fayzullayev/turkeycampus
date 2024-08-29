@@ -16,10 +16,10 @@ function About() {
             />
           </div>
           <div className="max-w-[600px]">
-            <h3 className="about-h3 relative pl-[22px] uppercase text-[#1966a2] text-[30px] font-[600]">
+            <h3 className="about-h3 relative pl-[22px] uppercase text-[#1966a2] text-[26px] md:text-[30px] font-[600]">
               About us
             </h3>
-            <h2 className="text-[42px] font-[800] leading-[1.4] text-[#212529]">
+            <h2 className="text-[38px] md:text-[42px] font-[800] leading-[1.4] text-[#212529]">
               {" "}
               Who We Are:
             </h2>
