@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import Hamburger from "../../ui/navbar/hamburger";
 import MobileApplyBtn from "../../ui/navbar/mobileApplyBtn";
@@ -14,8 +14,30 @@ function NavbarBottom({
   handleMouseLeave,
   openDropdownIndex,
 }) {
+  const [isBlurred, setIsBlurred] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsBlurred(true);
+      } else {
+        setIsBlurred(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="nav rounded-b-[43px] px-[2px] md:px-[35px] py-3 flex items-center justify-between md:gap-[50px] xl:bg-white">
+    <div
+      className={`nav rounded-b-[43px] px-[2px] md:px-[35px] py-3 flex items-center justify-between md:gap-[50px] xl:bg-white ${
+        isBlurred ? "backdrop-blur-md" : ""
+      }`}
+    >
       <img src="/logo.png" alt="Logo" className="max-w-[145px]" />
 
       <div>
