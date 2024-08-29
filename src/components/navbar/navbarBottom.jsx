@@ -28,7 +28,7 @@ function NavbarBottom({
               className="relative"
             >
               <a
-                href={item.link}
+                href="#"
                 onClick={() => handleActive(index)}
                 className={`text-[#707070] ${
                   activeIndex === index ? "active" : ""

@@ -80,8 +80,8 @@ swiper {
 
 .active-mob{
   background-color: #fef5f5;
-  color: #e63f38;
- border-radius: 23px;
+  color: #e63f38 !important;
+  border-radius: 23px;
 }
 
 .icon {

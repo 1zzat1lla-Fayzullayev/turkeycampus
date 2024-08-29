@@ -55,7 +55,7 @@ function MobNavbar({
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <a
-                    href={item.link}
+                    href="#"
                     onClick={() => handleActive(index)}
                     className={`block py-2 px-4 text-[#707070] font-[600] text-[13px] md:text-[16px] hover:bg-[#fef5f5] rounded-[23px] hover:text-[#e63f38] transition-colors ${
                       activeIndex === index ? "active-mob" : ""
