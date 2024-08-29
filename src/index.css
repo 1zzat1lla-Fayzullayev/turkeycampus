@@ -78,6 +78,12 @@ swiper {
   border-color: transparent transparent #e63f38 transparent;
 }
 
+.active-mob{
+  background-color: #fef5f5;
+  color: #e63f38;
+ border-radius: 23px;
+}
+
 .icon {
   color: #676767;
   transition: 0.2s ease-in-out;

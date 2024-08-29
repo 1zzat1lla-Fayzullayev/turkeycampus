@@ -4,83 +4,16 @@ import React, { useState, useEffect } from "react";
 import Hamburger from "../../ui/navbar/hamburger";
 import MobileApplyBtn from "../../ui/navbar/mobileApplyBtn";
 import Dropdown from "../../ui/navbar/dropdown";
+import { menuItems } from "../../data/navbarData";
 
-function NavbarBottom({ handleOpenNavbar }) {
-  const [activeIndex, setActiveIndex] = useState(
-    () => JSON.parse(localStorage.getItem("activeIndex")) || 0
-  );
-
-  const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
-
-  const menuItems = [
-    { text: "Home", link: "/" },
-    {
-      text: "About us",
-      link: "/about",
-      hasDropdown: true,
-      dropdownLinks: [{ text: "Be our Agent", link: "/be-our-agent" }],
-    },
-    { text: "Services", link: "/services" },
-    {
-      text: "Study Destinations",
-      link: "/study-destinations",
-      hasDropdown: true,
-      dropdownLinks: [
-        { text: "USA", link: "/study-destinations/usa" },
-        { text: "UK", link: "/study-destinations/uk" },
-      ],
-    },
-    {
-      text: "Universities",
-      link: "/universities",
-      hasDropdown: true,
-      dropdownLinks: [
-        { text: "Harvard", link: "/universities/harvard" },
-        { text: "Stanford", link: "/universities/stanford" },
-      ],
-    },
-    {
-      text: "Fields",
-      link: "/fields",
-      hasDropdown: true,
-      dropdownLinks: [
-        { text: "Engineering", link: "/fields/engineering" },
-        { text: "Medicine", link: "/fields/medicine" },
-      ],
-    },
-    {
-      text: "Videos & Podcast",
-      link: "/media",
-      hasDropdown: true,
-      dropdownLinks: [
-        { text: "Webinars", link: "/media/webinars" },
-        { text: "Podcasts", link: "/media/podcasts" },
-      ],
-    },
-    { text: "Blog", link: "/blog" },
-    { text: "Contact Us", link: "/contact" },
-  ];
-
-  const handleActive = (index) => {
-    setActiveIndex(index);
-    localStorage.setItem("activeIndex", JSON.stringify(index));
-  };
-
-  const handleMouseEnter = (index) => {
-    setOpenDropdownIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setOpenDropdownIndex(null);
-  };
-
-  useEffect(() => {
-    const storedIndex = JSON.parse(localStorage.getItem("activeIndex"));
-    if (storedIndex !== null) {
-      setActiveIndex(storedIndex);
-    }
-  }, []);
-
+function NavbarBottom({
+  handleOpenNavbar,
+  activeIndex,
+  handleActive,
+  handleMouseEnter,
+  handleMouseLeave,
+  openDropdownIndex,
+}) {
   return (
     <div className="nav rounded-b-[43px] px-[2px] md:px-[35px] py-3 flex items-center justify-between md:gap-[50px] xl:bg-white">
       <img src="/logo.png" alt="Logo" className="max-w-[145px]" />
