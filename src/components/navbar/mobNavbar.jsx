@@ -51,12 +51,15 @@ function MobNavbar({
             </button>
           </div>
           <div>
-            <ul className="mt-[20px]">
+            <ul className="mt-[20px] flex flex-col gap-[5px]">
               {menuItems.map((item, index) => (
                 <li key={index}>
                   <a
                     href="#"
-                    onClick={() => handleActive(index)}
+                    onClick={() => {
+                      handleActive(index);
+                      handleOpenNavbar();
+                    }}
                     className={`block py-2 px-4 text-[#707070] font-[600] text-[13px] md:text-[16px] hover:bg-[#fef5f5] rounded-[23px] hover:text-[#e63f38] transition-colors ${
                       activeIndex === index ? "active-mob" : ""
                     }`}
