@@ -58,7 +58,7 @@ function MainFindBlock() {
                   <h4 className="text-[11px] text-[#7A7A7A]">{item.label}</h4>
                   <img src={item.icon} alt="" />
                 </MenuButton>
-                <CustomMenuList menuType={item.key} />
+                <CustomMenuList menuType={item.key} handleMenuClick={handleMenuClick} />
               </Menu>
             ))}
           </div>

@@ -5,6 +5,7 @@ export const menuItems = [
     link: "/about",
     hasDropdown: true,
     dropdownLinks: [{ text: "Be our Agent", link: "/be-our-agent" }],
+    dropdownIcon: true,
   },
   { text: "Services", link: "/services" },
   {
@@ -15,6 +16,7 @@ export const menuItems = [
       { text: "USA", link: "/study-destinations/usa" },
       { text: "UK", link: "/study-destinations/uk" },
     ],
+    dropdownIcon: true,
   },
   {
     text: "Universities",
@@ -24,6 +26,7 @@ export const menuItems = [
       { text: "Harvard", link: "/universities/harvard" },
       { text: "Stanford", link: "/universities/stanford" },
     ],
+    dropdownIcon: true,
   },
   {
     text: "Fields",
@@ -33,6 +36,7 @@ export const menuItems = [
       { text: "Engineering", link: "/fields/engineering" },
       { text: "Medicine", link: "/fields/medicine" },
     ],
+    dropdownIcon: true,
   },
   {
     text: "Videos & Podcast",
@@ -42,6 +46,7 @@ export const menuItems = [
       { text: "Webinars", link: "/media/webinars" },
       { text: "Podcasts", link: "/media/podcasts" },
     ],
+    dropdownIcon: true,
   },
   { text: "Blog", link: "/blog" },
   { text: "Contact Us", link: "/contact" },

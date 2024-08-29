@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   overflow-x: hidden;
   width: 100%;
 }
 
-.line-effict, .line-effict-2 {
+.line-effict,
+.line-effict-2 {
   position: absolute;
   overflow-x: hidden;
   top: 100%;
@@ -19,7 +20,6 @@ body{
   border: 1px solid #e63f38;
   opacity: 0.2;
   background: transparent;
-  /* z-index: -1; */
 }
 
 .line-effict .other-line {
@@ -32,10 +32,10 @@ body{
   margin: auto;
 }
 
-.main-gradient{
+.main-gradient {
   height: 100%;
-  background: transparent linear-gradient(180deg, #d5f0f7 0%, #ffffff 100%) 0% 0% no-repeat padding-box;
-  /* z-index: -2; */
+  background: transparent linear-gradient(180deg, #d5f0f7 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
   position: relative;
 }
 
@@ -52,8 +52,9 @@ swiper {
   object-fit: cover;
 }
 
+/* Hover and active styles for the links and icons */
 .nav ul li a {
-  position: relative; 
+  position: relative;
   color: #707070;
   text-decoration: none;
   font-size: 15px;
@@ -61,12 +62,18 @@ swiper {
   transition: color 0.15s ease;
 }
 
-.nav ul li a.active,
-.nav ul li a:hover {
-  color: #e63f38;
+/* Apply hover and active styles to parent container */
+.iconLinkDiv:hover a,
+.iconLinkDiv a.active,
+.iconLinkDiv:hover .icon,
+.dropdownIcon.active,
+.dropdownIcon:hover {
+  color: #e63f38; /* Apply hover and active colors */
 }
 
-.nav ul li a.active::after {
+/* Apply active styles for the pseudo-element */
+.iconLinkDiv a.active::after,
+.iconLinkDiv:hover a::after {
   content: "";
   position: absolute;
   top: 125%;
@@ -78,7 +85,7 @@ swiper {
   border-color: transparent transparent #e63f38 transparent;
 }
 
-.active-mob{
+.active-mob {
   background-color: #fef5f5;
   color: #e63f38 !important;
   border-radius: 23px;
@@ -89,11 +96,7 @@ swiper {
   transition: 0.2s ease-in-out;
 }
 
-.icon:hover {
-  color: #e63f38;
-}
-
-.signup .signup-icon{
+.signup .signup-icon {
   color: #1966a2;
 }
 
@@ -120,33 +123,31 @@ body {
   }
 }
 
-
 .mob-navbar {
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
 
 .animate-slideIn {
-  animation: slideIn 0.3s forwards; 
+  animation: slideIn 0.3s forwards;
 }
 
 .animate-slideOut {
-  animation: slideOut 0.6s forwards; 
+  animation: slideOut 0.6s forwards;
 }
 
-
-.css-xl71ch{
+.css-xl71ch {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-.main-find-block{
+.main-find-block {
   -webkit-box-shadow: -88px 68px 73px -1px rgba(230, 63, 56, 0.11);
 }
 
-.about-h3::before{
+.about-h3::before {
   content: "";
   position: absolute;
   width: 14px;
@@ -157,8 +158,7 @@ body {
   background-color: #1966a2;
 }
 
-
-.about-h3::after{
+.about-h3::after {
   content: "";
   top: 8px;
   background-color: #e63f38;

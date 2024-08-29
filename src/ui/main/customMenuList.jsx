@@ -3,7 +3,7 @@
 import React from "react";
 import { MenuList, MenuGroup, MenuItem } from "@chakra-ui/react";
 
-function CustomMenuList({ menuType }) {
+function CustomMenuList({ menuType, handleMenuClick }) {
   const menuItems = {
     degree: [
       "Bachelor's",
@@ -37,6 +37,7 @@ function CustomMenuList({ menuType }) {
             key={index}
             _hover={{ bg: "#e63f38", color: "white" }}
             className="text-[16px] p-2"
+            onClick={handleMenuClick}
           >
             {item}
           </MenuItem>
