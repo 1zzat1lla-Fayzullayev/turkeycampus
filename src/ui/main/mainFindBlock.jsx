@@ -12,14 +12,13 @@ import {
 } from "@chakra-ui/react";
 
 function MainFindBlock() {
-  const [activeMenu, setActiveMenu] = useState(null); // State to track which menu is active
+  const [activeMenu, setActiveMenu] = useState(null); 
 
-  // Function to handle menu clicks
+
   const handleMenuClick = (menu) => {
-    setActiveMenu(menu === activeMenu ? null : menu); // Toggle the active menu based on the clicked div
+    setActiveMenu(menu === activeMenu ? null : menu); 
   };
 
-  // Function to render dynamic menu content based on activeMenu state
   const renderMenuContent = (menu) => {
     switch (menu) {
       case "degree":
@@ -78,7 +77,6 @@ function MainFindBlock() {
         <div className="w-full">
           <div className="flex flex-col w-full gap-[20px] p-7 md:p-0">
             <div className="flex flex-col md:flex-row w-full items-center gap-[25px] ">
-              {/* Menu for "Choose a Degree" */}
               <Menu isOpen={activeMenu === "degree"}>
                 <MenuButton
                   onClick={() => handleMenuClick("degree")}
@@ -90,7 +88,7 @@ function MainFindBlock() {
                 {renderMenuContent("degree")}
               </Menu>
 
-              {/* Menu for "Choose a Field" */}
+           
               <Menu isOpen={activeMenu === "field"}>
                 <MenuButton
                   onClick={() => handleMenuClick("field")}
@@ -102,7 +100,7 @@ function MainFindBlock() {
                 {renderMenuContent("field")}
               </Menu>
 
-              {/* Menu for "Choose a Speciality" */}
+             
               <Menu isOpen={activeMenu === "speciality"}>
                 <MenuButton
                   onClick={() => handleMenuClick("speciality")}
@@ -114,7 +112,7 @@ function MainFindBlock() {
                 {renderMenuContent("speciality")}
               </Menu>
 
-              {/* Menu for "Choose a Language" */}
+            
               <Menu isOpen={activeMenu === "language"}>
                 <MenuButton
                   onClick={() => handleMenuClick("language")}
