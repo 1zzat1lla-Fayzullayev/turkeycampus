@@ -140,3 +140,7 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+
+.main-find-block{
+  -webkit-box-shadow: -88px 68px 73px -1px rgba(230, 63, 56, 0.11);
+}
