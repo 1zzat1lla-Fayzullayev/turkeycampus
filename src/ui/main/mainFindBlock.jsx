@@ -83,7 +83,7 @@ function MainFindBlock() {
                   className="flex justify-between items-center uppercase  border border-[#aaa] cursor-pointer rounded-[100px] px-5 w-full md:max-w-[220px] py-3"
                 >
                   <h4 className="text-[11px] text-[#7A7A7A]">choose a degree</h4>
-                  <img src="/public/find-icon1.svg" alt="" />
+                  <img src="/find-icon1.svg" alt="" />
                 </MenuButton>
                 {renderMenuContent("degree")}
               </Menu>
@@ -95,7 +95,7 @@ function MainFindBlock() {
                   className="flex justify-between items-center uppercase  border border-[#aaa] cursor-pointer rounded-[100px] px-5 w-full md:max-w-[220px] py-3"
                 >
                   <h4 className="text-[11px] text-[#7A7A7A]">choose a field</h4>
-                  <img src="/public/find-icon2.svg" alt="" />
+                  <img src="/find-icon2.svg" alt="" />
                 </MenuButton>
                 {renderMenuContent("field")}
               </Menu>
@@ -107,7 +107,7 @@ function MainFindBlock() {
                   className="flex justify-between items-center uppercase  border border-[#aaa] cursor-pointer rounded-[100px] px-5 w-full md:max-w-[220px] py-3"
                 >
                   <h4 className="text-[11px] text-[#7A7A7A]">choose a speciality</h4>
-                  <img src="/public/find-icon3.svg" alt="" />
+                  <img src="/find-icon3.svg" alt="" />
                 </MenuButton>
                 {renderMenuContent("speciality")}
               </Menu>
@@ -119,7 +119,7 @@ function MainFindBlock() {
                   className="flex justify-between items-center uppercase  border border-[#aaa] cursor-pointer rounded-[100px] px-5 w-full md:max-w-[220px] py-3"
                 >
                   <h4 className="text-[11px] text-[#7A7A7A]">choose a language</h4>
-                  <img src="/public/find-icon4.svg" alt="" />
+                  <img src="/find-icon4.svg" alt="" />
                 </MenuButton>
                 {renderMenuContent("language")}
               </Menu>
@@ -132,7 +132,7 @@ function MainFindBlock() {
                 className="w-full border outline-none px-[20px] py-5 relative border-[#aaa] cursor-pointer rounded-[100px]"
               />
               <img
-                src="/public/find-icon5.svg"
+                src="/find-icon5.svg"
                 alt=""
                 className="absolute top-6 right-5 w-[20px] cursor-pointer"
               />
