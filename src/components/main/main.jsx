@@ -8,6 +8,7 @@ import { mainData } from "../../data/mainData";
 import MainLine from "./mainLine";
 import { Navigation, Pagination } from "swiper/modules";
 import Wrapper from "../../layout/wrapper";
+import MainFindBlock from "../../ui/main/mainFindBlock";
 
 function Main() {
   return (
@@ -51,6 +52,7 @@ function Main() {
           <div className="">
             <MainLine />
           </div>
+          <MainFindBlock />
         </Wrapper>
         
       </div>
