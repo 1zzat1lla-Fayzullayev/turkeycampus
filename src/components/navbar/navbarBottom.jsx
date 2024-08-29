@@ -34,7 +34,7 @@ function NavbarBottom({
 
   return (
     <div
-      className={`nav rounded-b-[43px] px-[2px] md:px-[35px] py-3 flex items-center justify-between md:gap-[50px] xl:bg-white ${
+      className={`nav rounded-[10px] md:rounded-b-[43px] px-[2px] md:px-[35px] py-3 flex items-center justify-between md:gap-[50px] xl:bg-white ${
         isBlurred ? "backdrop-blur-md" : ""
       }`}
     >
