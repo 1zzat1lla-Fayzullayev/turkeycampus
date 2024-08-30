@@ -2,15 +2,11 @@
 /* eslint-disable no-unused-vars */
 import React, { useRef } from "react";
 import { servicesData } from "../../data/servicesData";
-import ServicesSwiper from "./servicesSwiper";
+import Swiper from "./servicesSwiper";
 
 function ServicesCard() {
   
-  const slides = [
-    <div className="h-64 bg-red-500 flex items-center justify-center text-white text-3xl">Slide 1</div>,
-    <div className="h-64 bg-blue-500 flex items-center justify-center text-white text-3xl">Slide 2</div>,
-    <div className="h-64 bg-green-500 flex items-center justify-center text-white text-3xl">Slide 3</div>,
-  ];
+
   const swiperRef = useRef(null);
 
   // Function to handle scrolling left
@@ -28,7 +24,7 @@ function ServicesCard() {
   };
 
   return (
-    <div className="relative py-8 max-w-[90%] mx-auto">
+    <div className="relative py-8 max-w-[85%] mx-auto">
       {/* Buttons for navigation */}
       {/* <button
         onClick={scrollLeft}
@@ -77,7 +73,38 @@ function ServicesCard() {
           </div>
         ))}
       </div> */}
-      <ServicesSwiper items={slides} />
+      <Swiper autoplayInterval={4000}>
+        {/* <div className="bg-blue-500 h-64 flex justify-center items-center text-white text-2xl">Slide 1</div>
+        <div className="bg-red-500 h-64 flex justify-center items-center text-white text-2xl">Slide 2</div>
+        <div className="bg-green-500 h-64 flex justify-center items-center text-white text-2xl">Slide 3</div> */}
+        {servicesData.map((item) => (
+            <div
+              key={item.title}
+              className="relative z-[10] w-[312px] rounded-lg min-h-[291px] mt-[65px] shadow-lg border border-gray-200 bg-white"
+              // style={{ scrollSnapAlign: "start" }}
+            >
+              <div className="service-img flex items-center justify-center mt-4">
+                <img
+                  src={item.pic}
+                  alt="Service Icon"
+                  className="h-24 w-24 rounded-full object-cover"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <h4 className="text-xl font-bold mb-2">{item.title}</h4>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+              <div className="flex justify-center mb-6">
+                <a
+                  href="https://turkeycampus.com/en/contact-us"
+                  className="px-8 py-2 border border-[#1966a2] text-[#1966a2] rounded-full hover:bg-[#1966a2] hover:text-white transition duration-300"
+                >
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          ))}
+      </Swiper>
     </div>
   );
 }
