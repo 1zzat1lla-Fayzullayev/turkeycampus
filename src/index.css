@@ -172,3 +172,17 @@ body {
 .backdrop-blur-md {
   backdrop-filter: blur(10px);
 }
+
+.joinus-first-bg{
+  background-image: url(/public/joinus-1.png);
+  background-repeat: no-repeat;
+  background-size: 55% 100%;
+  background-position: center;
+}
+
+.joinus-num-bg{
+  background-image: url(/public/joinus-number-bg.png);
+    background-repeat: no-repeat;
+    background-size: 85% 85%;
+    background-position: center;
+}
