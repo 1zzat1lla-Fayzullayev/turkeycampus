@@ -173,25 +173,86 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.joinus-first-bg{
+.joinus-first-bg {
   background-image: url(/public/joinus-1.png);
   background-repeat: no-repeat;
   background-size: 55% 100%;
   background-position: center;
 }
 
-.joinus-num-bg{
+.joinus-num-bg {
   background-image: url(/public/joinus-number-bg.png);
-    background-repeat: no-repeat;
-    background-size: 85% 85%;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85% 85%;
+  background-position: center;
 }
 
-.service-img{
+.service-img {
   margin: -65px auto 0 auto;
   background-color: #ffffff;
   border-radius: 70px;
   box-shadow: inset 0px 4px 4px #00000040;
   height: 140px;
   width: 140px;
+}
+
+.univer_logo::before {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  top: 16%;
+  left: -58px;
+  translate: 0 -50%;
+  width: 70px;
+  height: 60px;
+  border-bottom-right-radius: 50%;
+  box-shadow: 0 40px 0 0 #fff;
+}
+
+.univer_logo::after {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  top: 17%;
+  right: -58px;
+  translate: 0 -50%;
+  width: 70px;
+  height: 60px;
+  border-bottom-left-radius: 50%;
+  box-shadow: 0 40px 0 0 #fff;
+}
+
+.swiper-pagination {
+  top: 130% !important;
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.swiper-pagination-bullet {
+  background-color: #d3d3d3;
+  width: 12px;
+  height: 12px; 
+  border-radius: 50%;
+  opacity: 1; 
+  transition: all 0.3s ease;
+  position: relative; 
+}
+
+.swiper-pagination-bullet-active {
+  background-color: transparent; 
+  border: 2px solid #e63f38; 
+}
+
+.swiper-pagination-bullet-active::after {
+  content: ""; 
+  width: 6px; 
+  height: 6px; 
+  background-color: white; 
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

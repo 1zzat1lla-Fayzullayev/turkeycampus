@@ -80,7 +80,7 @@ function ServicesCard() {
         {servicesData.map((item) => (
             <div
               key={item.title}
-              className="relative z-[10] w-[312px] rounded-lg min-h-[291px] mt-[65px] shadow-lg border border-gray-200 bg-white"
+              className="relative select-none z-[10] w-[312px] rounded-lg min-h-[291px] mt-[65px] shadow-lg border border-gray-200 bg-white"
               // style={{ scrollSnapAlign: "start" }}
             >
               <div className="service-img flex items-center justify-center mt-4">
