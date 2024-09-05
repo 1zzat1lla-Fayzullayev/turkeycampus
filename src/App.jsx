@@ -7,6 +7,7 @@ import JoinUs from "./components/join us/joinUs";
 import Services from "./components/services/services";
 import Universities from "./components/universities/universities";
 import Adventages from "./components/adventages/adventages";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <Universities />
       <Adventages />
+      <Footer />
     </>
   );
 }
