@@ -190,6 +190,7 @@ body {
 .service-img {
   margin: -65px auto 0 auto;
   background-color: #ffffff;
+  padding: 20px;
   border-radius: 70px;
   box-shadow: inset 0px 4px 4px #00000040;
   height: 140px;
