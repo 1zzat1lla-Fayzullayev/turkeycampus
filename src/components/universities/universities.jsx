@@ -12,7 +12,7 @@ function Universities() {
   return (
     <>
       <Wrapper>
-        <div className="mb-[100px] relative">
+        <div className="mb-[100px] mt-[100px] h-full relative">
           <div>
             <h2 className="text-[38px] font-[700]">
               List Of <span className="text-[#e63f38]">Universities</span>
@@ -27,7 +27,7 @@ function Universities() {
               spaceBetween={30}
               slidesPerView={3}
               pagination={{ clickable: true }}
-              autoplay={{ delay: 3000, disableOnInteraction: false }} // Added autoplay configuration
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               breakpoints={{
                 320: {
                   slidesPerView: 1, 

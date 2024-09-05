@@ -6,6 +6,7 @@ import About from "./components/about/about";
 import JoinUs from "./components/join us/joinUs";
 import Services from "./components/services/services";
 import Universities from "./components/universities/universities";
+import Adventages from "./components/adventages/adventages";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <JoinUs />
       <Services />
       <Universities />
+      <Adventages />
     </>
   );
 }

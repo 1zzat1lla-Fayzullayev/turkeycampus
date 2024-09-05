@@ -1,21 +1,19 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Import necessary modules
-import { servicesData } from "../../data/servicesData"; // Import your services data
+import { Navigation, Pagination, Autoplay } from "swiper/modules"; 
+import { servicesData } from "../../data/servicesData"; 
 
 function ServicesCard() {
   return (
-    <div className="mt-[50px]">
+    <div className="mt-[50px] flex items-center justify-center w-full">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={4}
-        // pagination={{ clickable: true }}
+        spaceBetween={10}
+        slidesPerView={3}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         breakpoints={{
           320: {
@@ -28,10 +26,6 @@ function ServicesCard() {
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          1280: {
-            slidesPerView: 4,
             spaceBetween: 30,
           },
         }}
