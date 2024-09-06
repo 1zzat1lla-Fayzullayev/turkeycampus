@@ -8,6 +8,7 @@ import Services from "./components/services/services";
 import Universities from "./components/universities/universities";
 import Adventages from "./components/adventages/adventages";
 import Footer from "./components/footer/footer";
+import Vlog from "./components/vlog/vlog";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Services />
       <Universities />
       <Adventages />
+      <Vlog />
       <Footer />
     </>
   );
