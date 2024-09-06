@@ -328,3 +328,17 @@ footer .line-effict-footer {
   z-index: 10;
   background-color: #ffffff9c;
 }
+
+.partners .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.partners .swiper-slide img {
+  width: 120px;
+  height: 100%;
+  object-fit: contain;
+}
+

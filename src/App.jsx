@@ -9,6 +9,7 @@ import Universities from "./components/universities/universities";
 import Adventages from "./components/adventages/adventages";
 import Footer from "./components/footer/footer";
 import Vlog from "./components/vlog/vlog";
+import Partners from "./components/partners/partners";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Universities />
       <Adventages />
       <Vlog />
+      <Partners />
       <Footer />
     </>
   );
