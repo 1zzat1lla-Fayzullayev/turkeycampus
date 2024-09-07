@@ -355,3 +355,17 @@ footer .line-effict-footer {
   right: -12%;
   background-color: #1966a2;
 }
+
+.news-container::before {
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #e63f38;
+}
+
+.news-container::after {
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #1966a2;
+}

@@ -11,6 +11,7 @@ import Footer from "./components/footer/footer";
 import Vlog from "./components/vlog/vlog";
 import Partners from "./components/partners/partners";
 import Comments from "./components/comments/comments";
+import News from "./components/news/news";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Vlog />
       <Partners />
       <Comments />
+      <News />
       <Footer />
     </>
   );
